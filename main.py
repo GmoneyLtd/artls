@@ -36,7 +36,7 @@ class Artls(BaseRequestHandler):
 
 
 if __name__ == '__main__':
-    host = ('192.168.1.100', 8888)
+    host = ('0.0.0.0', 8888)
 
     server = UDPServer(host, Artls)
     server.serve_forever()
